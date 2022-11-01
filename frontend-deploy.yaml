@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: mohlin/udagram-frontend:v4
+        image: mohlin/udagram-frontend:v1
         ports:
         - containerPort: 80
