@@ -20,11 +20,11 @@ jobs:
     - run: docker tag udagram-api-feed mohlin/udagram-api-feed:v1
     - run: docker tag udagram-api-user mohlin/udagram-api-user:v1
     - run: docker tag reverseproxy mohlin/reverseproxy:v1
-    - run: docker tag udagram-frontend:local mohlin/udagram-frontend:v2
+    - run: docker tag udagram-frontend:local mohlin/udagram-frontend:v4
     - run: echo "${{secrets.DOCKER_PASSWORD}}" | docker login -u "${{secrets.DOCKER_USERNAME}}" --password-stdin
     - run: docker push mohlin/udagram-api-feed:v1
     - run: docker push mohlin/udagram-api-user:v1
     - run: docker push mohlin/reverseproxy:v1
-    - run: docker push mohlin/udagram-frontend:v2
+    - run: docker push mohlin/udagram-frontend:v4
     
 
